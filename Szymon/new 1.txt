@@ -1,0 +1,49 @@
+SELECT * FROM `dania` WHERE cena BETWEEN 10 and 20;
+SELECT id, cena, nazwa FROM `dania` WHERE cena between 20 and 30;
+SELECT * FROM `dania` WHERE nazwa like 'G%'
+SELECT * FROM `dania` WHERE nazwa like '%a%'
+SELECT * FROM `dania` WHERE typ = '1'
+SELECT * FROM `dania` WHERE typ is not null
+SELECT * FROM `dania` WHERE typ is null
+SELECT * FROM `dania` WHERE nazwa is not null
+SELECT * FROM `gromady` WHERE nazwa like 'r%'
+SELECT * FROM `gromady` WHERE opis is null
+SELECT * FROM `gromady` WHERE opis is not null
+SELECT * FROM `odzywianie` WHERE rodzaj like 'd%'
+SELECT * FROM `odzywianie` WHERE informacja IS NULL
+SELECT * FROM `odzywianie` WHERE informacji is not null
+SELECT * FROM `ogloszenie` WHERE kategoria = '1'
+SELECT * FROM `ogloszenie` WHERE tytul like '%Daniel%'
+SELECT * FROM `ogloszenie` WHERE tresc like '%sprzedam%'
+SELECT * FROM `ogloszenie` WHERE podkategoria BETWEEN 12 and 14
+SELECT * FROM `ogloszenie` WHERE uzytkownik_id IS NOT NULL
+SELECT * FROM `ogloszenie` WHERE uzytkownik_id IS NULL;
+SELECT * FROM `podzespoly` WHERE cena BETWEEN 150 and 300
+SELECT * FROM `podzespoly` WHERE dostepnosc = '1'
+SELECT * FROM `podzespoly` WHERE nazwa like 'Core%'
+SELECT * FROM `podzespoly` WHERE opis like '%DDR3%'
+SELECT * FROM `podzespoly` WHERE cena between 300 and 600
+SELECT * FROM `podzespoly` WHERE dostepnosc is null;
+SELECT * FROM `podzespoly` WHERE dostepnosc is not null
+SELECT * FROM `pracownicy` WHERE stanowisko = '2'
+SELECT * FROM `pracownicy` WHERE imie like 'A%'
+SELECT * FROM `pracownicy` WHERE nazwisko like '%a'
+SELECT * FROM `pracownicy` WHERE stanowisko between 2 and 3
+SELECT * FROM `pracownicy` WHERE nazwisko is not null
+SELECT * FROM `typy` WHERE kategoria like 'P%'
+SELECT * FROM `typy` WHERE opis is null;
+SELECT * FROM `typy` WHERE opis is not null
+SELECT * FROM `typy` WHERE opis is not null
+SELECT * FROM `uczniowie` WHERE imie like 'K%'
+SELECT * FROM `uczniowie` WHERE nazwisko like '%a%'
+SELECT * FROM `uczniowie` WHERE wiek is not NULL
+SELECT * FROM `uzytkownik` WHERE email like '%@poczta.pl'
+SELECT * FROM `uzytkownik` WHERE telefon like '60%'
+SELECT * FROM `uzytkownik` WHERE nazwisko like 'N%'
+SELECT * FROM `uzytkownik` WHERE email is null
+SELECT * FROM `uzytkownik` WHERE email is not null
+SELECT * FROM `wyniki` WHERE wynik between 11.50 and 12.00
+SELECT * FROM `wyniki` WHERE dataUstanowienia BETWEEN  2015-10-06 and 2015-10-14
+SELECT * FROM `wyniki` WHERE dataUstanowienia like '2015-10-%'
+SELECT * FROM `zamowienia` WHERE dataZam = 2016-02-15
+SELECT * FROM `zwierzeta` WHERE wystepowanie like '%Europa%'

@@ -1,0 +1,77 @@
+SELECT * FROM `autorzy` WHERE nazwisko = 'Coben'
+SELECT * FROM `czytelnicy` WHERE miasto = 'Poznan'
+SELECT * FROM `ksiazki` WHERE cena_netto >'30'
+SELECT * FROM `pracownicy` WHERE wynagrodzenie <= '3500'
+SELECT * FROM `ksiazki` WHERE cena_netto <> 50
+SELECT * FROM `czytelnicy` WHERE id_czytelnika > 5
+SELECT imie,nazwisko,miasto FROM `czytelnicy` WHERE miasto = 'Lublin'
+SELECT * FROM `wypozyczenia` WHERE id_wypozyczenia = 2
+SELECT * FROM `pracownicy` WHERE nazwisko = 'Nowak'
+SELECT * FROM `sprzedaz` WHERE ilosc > 1
+SELECT * FROM `czytelnicy` WHERE miasto IN ('Poznan', 'Lublin', 'Krakow')
+SELECT * FROM `ksiazki` WHERE id_gatunku IN ('3', '4', '8')
+SELECT * FROM `autorzy` WHERE id_autora IN ('1', '3', '5')
+SELECT * FROM `pracownicy` WHERE wynagrodzenie IN ('3000', '4000', '5000')
+SELECT * FROM `pracownicy` WHERE id_stanowiska IN ('1', '2', '6')
+SELECT * FROM `czytelnicy` WHERE id_czytelnika IN ('2', '4', '6', '8')
+SELECT * FROM `ksiazki` WHERE cena_netto BETWEEN 20 AND 45
+SELECT * FROM `pracownicy` WHERE wynagrodzenie BETWEEN 3000 and 4000
+SELECT * FROM `czytelnicy` WHERE id_czytelnika BETWEEN 5 and 10
+SELECT * FROM `sprzedaz` WHERE id_sprzedaz between 2 and 5
+SELECT * FROM `autorzy` WHERE id_autora between 2 and 6
+SELECT * FROM `czytelnicy` WHERE kod_pocztowy IS NULL
+SELECT * FROM `czytelnicy` WHERE ulica is not null
+SELECT * FROM `czytelnicy` WHERE telefon IS NULL
+SELECT * FROM `czytelnicy` WHERE kod_pocztowy IS NOT NULL
+SELECT * FROM `czytelnicy` WHERE telefon IS NOT NULL
+SELECT * FROM `pracownicy` WHERE imie LIKE ('K%')
+SELECT * FROM `ksiazki` WHERE tytul like '%tron%'
+SELECT * FROM `czytelnicy` WHERE email like '%pl'
+SELECT * FROM `czytelnicy` WHERE miasto like '%n'
+SELECT * FROM `pracownicy` WHERE imie like 'A%'
+SELECT * FROM `gatunki` WHERE gatunek like '%a'
+SELECT * FROM `czytelnicy` WHERE nazwisko like '%ow%'
+SELECT * FROM `ksiazki` WHERE tytul like 'S%'
+SELECT * FROM `stanowiska` WHERE nazwa like '%r%'
+SELECT * FROM `autorzy` WHERE imie like '___'
+SELECT * FROM `pracownicy` WHERE nazwisko like '__w%'
+SELECT * FROM `autorzy` WHERE nazwisko like '_____'
+SELECT * FROM `ksiazki` WHERE tytul like '_i%'
+SELECT * FROM `czytelnicy` WHERE email like '_a%'
+SELECT * FROM `czytelnicy` WHERE miasto like '______'
+SELECT * FROM `czytelnicy` WHERE imie like 'a%' or imie like 'm%'
+SELECT * FROM `czytelnicy` WHERE nazwisko like 'A%' or nazwisko like 'b%' or nazwisko like 'c%'
+SELECT * FROM `czytelnicy` WHERE imie not like  'a%' and imie not like 'm%' and imie not like 'J%'
+SELECT * FROM `ksiazki` WHERE tytul like 'n%'
+or tytul like 'o%'
+or tytul like 'p%'
+or tytul like 'R%'
+or tytul like 'S%'
+or tytul like 'T%'
+or tytul like 'U%'
+or tytul like 'W%'
+or tytul like 'Z%'
+SELECT * FROM `czytelnicy` WHERE miasto like 'Po%' or miasto like 'Pr%'
+SELECT * FROM `czytelnicy` WHERE nazwisko not like 'k%'
+or nazwisko not like 'l%'
+or nazwisko not like 'm%'
+or nazwisko not like 'N%'
+or nazwisko not like 'o%'
+or nazwisko not like 'P%'
+SELECT * FROM `pracownicy` WHERE nazwisko like '%i' or nazwisko like '%a'
+SELECT * FROM `czytelnicy` WHERE nazwisko not like '_a%'
+or nazwisko not like '_e%'
+or nazwisko not like '_i%'
+or nazwisko not like '_o%'
+or nazwisko not like '_u%'
+or nazwisko not like '_y%'
+SELECT * FROM `czytelnicy` WHERE login not like 'a%' 
+or login not like 'b%'
+or login not like 'c%'
+or login not like 'd%'
+or login not like 'e%'
+or login not like 'f%'
+or login not like 'g%'
+or login not like 'h%'
+or login not like 'i%'
+or login not like 'j%'

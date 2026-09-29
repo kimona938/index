@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+  font-family: arial;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #B7B7B7;
+    justify-content: space-between;
+    height: 10vw;
+    width: 100vw;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    background-color: #0A6446;
+}
+aside{
+    display: flex;
+    flex-direction: column;
+    height: 80vw;
+    width: 60vw;
+    background-color: #0A6446;
+    color: white;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color:  #B7B7B7;
+    height: 70vw;
+    width: 100vw;
+    justify-content: space-between;
+}
