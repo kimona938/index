@@ -21,3 +21,26 @@ footer{
     height: 20vh;
     width: 100vh;
 }
+#ok{
+    height: 100px;
+    width: 100px;
+}
+#nie{
+    height: 100px;
+    width: 100px;
+}
+#aha{
+    height: 100px;
+    width: 100px;
+}
+.zielony{
+    background-color: green;
+
+}
+.czerwony{
+    background-color: red;
+
+}
+.niebieski{
+    background-color: blue;
+}
